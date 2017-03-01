@@ -1,0 +1,333 @@
+/* All CSS styles go here */
+
+@font-face {
+	font-family: futura;
+	src:url(../fonts/futura.ttc);
+}
+
+@font-face {
+	font-family: gillsans;
+	src:url(../fonts/gillsans.ttc);
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#container {
+	width: 1440px;
+	height: 900px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-top: -500px;
+	margin-left: -720px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+	/* width: 1440px; margin-left: -720px; */
+	
+
+/* --------SKY PIECES---------------------------------------*/
+.skypiece1 {
+	width: 943.75px;
+	height: 666.666px;
+	position: absolute;
+	bottom: 0px;
+	left: 255px;
+	-webkit-animation: sky1 5s ease-in;
+	animation-delay: 1.25s;
+	animation-fill-mode: forwards;
+	z-index: +3;
+
+}
+
+  @-webkit-keyframes sky1 {
+	0% {bottom: 0px;}
+	100% {bottom: -1000px;}
+} 
+
+.skypiece2 {
+	width: 696.515px;
+	height: 347px;
+	position: absolute;
+	bottom: 47.7%;
+	right: 0px;
+	-webkit-animation: sky2 5s ease-in;
+	animation-delay: 1.25s;
+	animation-fill-mode: forwards;
+	z-index: +3;
+}
+
+@-webkit-keyframes sky2 {
+	0% {right: 0px;}
+	100% {right: -1000px;}
+} 
+
+.skypiece3 {
+	width: 670.334px;
+	height: 186.166px;
+	position: absolute;
+	top: 95px;
+	left: 270px;
+	-webkit-animation:sky3 10s ease-in;
+	animation-delay: 0.75s;
+	animation-fill-mode: forwards;
+	z-index: +3;
+}
+
+@-webkit-keyframes sky3 {
+	0% {top: 95px;}
+	100% {top: -1000px;}
+}
+
+.skypiece4 {
+	width: 752.25px;
+	height: 527.833px;
+	position: absolute;
+	left: -1px;
+	top: 24.2%;
+	-webkit-animation: sky4 5s ease-in;
+	animation-delay: 1.25s;
+	animation-fill-mode: forwards;
+	z-index: +3;
+		
+}
+
+@-webkit-keyframes sky4 {
+	0% {left: 0px;}
+	100% {left: -1000px;}
+} 
+
+/* --------BUILDINGS-------------------------------------*/
+.building1 {
+	width: 392px;
+	height: 369px;
+	position: absolute;
+	bottom: 0px;
+	left:-27px;
+}
+	
+.building2 {
+	width: 367.96px;
+	height: 546.614px;
+	position: absolute;
+	right: 0px;
+	bottom:0px;
+}
+
+.building3 {
+	width: 568.766px;
+	height:  93.5px;
+	position: absolute;
+	right: 0px;
+	top:103px;
+}
+
+.building4 {
+	width: 381.5px;
+	height:  231px;
+	position: absolute;
+	left: -27px;
+	top:103px;
+}
+/* --------BUILDING OUTLINES-----------------------------------------*/
+
+.lines1 {
+	width: 392px;
+	height: 369px;
+	position: absolute;
+	bottom: 0px;
+	left: -27px;
+	z-index: +5;
+	-webkit-animation: lines1 5s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	opacity: 0;
+}
+
+@-webkit-keyframes lines1 {
+	0% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+.lines2 {
+	width: 367.96px;
+	height: 546.614px;
+	position: absolute;
+	right: 0px;
+	bottom: 2px;
+	z-index: +5;
+	-webkit-animation: lines2 5s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	opacity: 0;
+}
+
+@-webkit-keyframes lines2 {
+	0% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+.lines3 {
+	width: 568.766px;
+	height: 93.5px;
+	position: absolute;
+	right: 0px;
+	top: 103px;
+	z-index: +5;
+	-webkit-animation: lines3 5s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	opacity: 0;
+}
+
+@-webkit-keyframes lines3 {
+	0% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+.lines4 {
+	width: 381.5px;
+	height: 231px;
+	position: absolute;
+	left: -27px;
+	top: 103px;
+	z-index: +5;
+	-webkit-animation: lines4 5s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	opacity: 0;
+}
+
+@-webkit-keyframes lines4 {
+	0% {opacity: 0;}
+	100% {opacity: 100;}
+}
+
+/* --------MARS/EARTH-----------------------------------------*/
+
+#mars {
+	width: 54px;
+	height: 54px;
+	background-color: #F09272;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 23%;	
+	-webkit-animation: mars_color 1.5s ease-in;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	z-index: +4;
+
+	-webkit-box-shadow: 0px 0px 77px 6px rgba(240,146,114,1);
+	-moz-box-shadow: 0px 0px 77px 6px rgba(240,146,114,1);
+	box-shadow: 0px 0px 77px 6px rgba(240,146,114,1);
+}
+
+@-webkit-keyframes mars_color {
+	0% {opacity: 100;}
+	100% {opacity: 0;}
+}
+
+#earth {
+	width: 54px;
+	height: 54px;
+	background-color: #C1CED9;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 23%;	
+	z-index: +3;
+	
+	
+	-webkit-box-shadow: 0px 0px 77px 6px rgba(193,206,217,1);
+	-moz-box-shadow: 0px 0px 77px 6px rgba(193,206,217,1);
+	box-shadow: 0px 0px 77px 6px rgba(193,206,217,1);
+}
+
+/* #rocket {
+	width: 50px;
+	height: 50px;
+	background-color: #D6B6AC;
+	border-radius: 100%;
+	position: absolute;
+	left: 27px;
+	top: 103px;
+	-webkit-animation: spec1 2s ease-out;
+	-webkit-animation-fill-mode: forwards;
+	z-index: +4;
+}
+
+@-webkit-keyframes spec1 {
+	0% {width: 50px; height: 50px; left: 27px; top:103px;}
+	100% {width: 0px; height: 0px; left: 52%; top: 25%;}
+} */
+
+
+/* --------TEXT------------------------------------------- */
+
+
+.title {
+
+	font-family: futura;
+	font-size: 3em;
+	color: #9CA2B6;
+	text-align: left;
+	position:relative;
+	left: 30%;
+	top: 11%;
+	z-index: +4;
+
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+}
+
+
+.an {
+	font-size: .6em;
+}
+
+#info {
+	font-family: futura;
+	font-size: 1em;
+	color: #A6888C;
+	line-height: 1.4em;
+	text-align: left;
+	position:relative;
+	left: 33.2%;
+	top: 12%;
+	z-index: -1;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+}
+
+#desc {
+	font-family: gillsans;
+	font-size: 1em;
+	color: #B5837D;
+	line-height: 1.4em;
+	text-align: left;
+	position:relative;
+	left: 36%;
+	top: 13%;
+	z-index: -1;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	
+}
+
+
+
+
+
+/* ---QUESTIONS---
+	-
